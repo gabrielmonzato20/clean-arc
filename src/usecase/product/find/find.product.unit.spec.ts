@@ -34,7 +34,7 @@ describe("Unit test product find usecase", () => {
     it("should return one product ",async ()=>{
         const productRepository : ProductRepositoryInterface = mockRepository()
         const findProductUseCase : FindProductUsesCase = new FindProductUsesCase(productRepository);
-        const result:ProductInterface = await findProductUseCase.execute(input);
+        const result:OutputFindProductDto = await findProductUseCase.execute(input);
         expect(result).toEqual(output)
     })
 

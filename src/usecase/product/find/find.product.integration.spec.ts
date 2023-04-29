@@ -26,7 +26,7 @@ const output : OutputFindProductDto = {
 
 
 
-describe("Unit test product find usecase", () => {
+describe("Integration test product find usecase", () => {
     let sequelize: Sequelize;
 
     beforeEach(async () => {
