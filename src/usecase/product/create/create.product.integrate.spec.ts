@@ -19,7 +19,7 @@ const input: InputCreateProductDto = {
 
 
 
-describe("Unit test for create Product use case",() => {
+describe("Integration test for create Product use case",() => {
     let sequelize: Sequelize;
 
     beforeEach(async () => {
