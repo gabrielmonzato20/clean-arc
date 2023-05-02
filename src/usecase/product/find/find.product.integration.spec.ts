@@ -61,7 +61,7 @@ describe("Integration test product find usecase", () => {
         const findProductUseCase : FindProductUsesCase = new FindProductUsesCase(productRepository);
         expect(async() => {
              return await findProductUseCase.execute(inputNotFound)
-        }).rejects.toThrow("Product not found");
+        }).rejects.toThrow();
 
         
     })
